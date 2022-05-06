@@ -1,0 +1,68 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  background: #ddd;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 29px;
+  height: 32px;
+  background-image: url("../images/sprite.png");
+  /* border-style: solid;
+  border-width: 15px 0 15px 35px;
+  border-color: transparent transparent transparent blue; */
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.cell {
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  border: 1px solid black;
+}
+#moves {
+  width: 16rem;
+  height: 40px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+.targetCell {
+  background-color: #7fff00;
+}
+.up {
+  background-position: 0px -96px;
+  /* transform: rotate(270deg); */
+}
+
+.down {
+  background-position: 0px 0px;
+  /* transform: rotate(90deg); */
+}
+
+.right {
+  background-position: 0px -64px;
+  /* transform: rotate(0deg); */
+}
+
+.left {
+  background-position: 0px -32px;
+  /* transform: rotate(180deg) */
+}

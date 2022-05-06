@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h3><%= game.title %></h3>
+<div class="container">
+  <form action="/search/results">
+    <input
+      type="search"
+      name="search"
+      placeholder="Tapez votre recherche ici"
+    />
+    <button type="submit" class="btn btn-2 btn-2h">Rechercher !</button>
+  </form>
+</div>
+<%- include('partials/footer') %>

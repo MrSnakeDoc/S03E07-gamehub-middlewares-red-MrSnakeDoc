@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %>
+
+<h3>Résultat de la recherche</h3>
+<div class="container">
+  <% if (game === "undefined") {%>
+  <h4>
+    Nous n'avons trouvé <strong>aucun</strong> jeu correspondant à votre
+    recherche
+  </h4>
+  <a class="results" href="/search"
+    >N'hésitez pas à refaire une recherche ici</a
+  >
+  <% } else {%>
+  <h4>Nous avons trouvé un jeu : <%= game.title %></h4>
+  <p>
+    Pour y jouer :
+    <a class="results" href="/game/<%= game.name%>"> <%= game.title %> </a>
+  </p>
+</div>
+<% } %> <%- include('partials/footer.ejs') %>

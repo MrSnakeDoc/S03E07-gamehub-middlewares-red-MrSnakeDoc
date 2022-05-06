@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <% if(typeof game.cssFile !== 'undefined' && game.cssFile) { %>
+  <link rel="stylesheet" href="/css/<%= game.cssFile %> " />
+  <% }%>
+  <% if(typeof results.cssFile !== 'undefined' && results.cssFile) { %>
+  <link rel="stylesheet" href="/css/<%= results.cssFile %> " />
+  <% }%>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="/">GameHub</a>
+    </h1>
+    <nav>
+      <ul>
+        <% games.forEach(element => { %> <% if(element.name === 'search') { %>
+        <li><a href="/<%=element.name %>"><%= element.title %></a></li>
+        <% } else{%>
+        <li><a href="/game/<%=element.name %>"><%= element.title %></a></li>
+        <% }%> <% }); %>
+      </ul>
+    </nav>
+  </header>
+</body>

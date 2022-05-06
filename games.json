@@ -1,0 +1,28 @@
+[
+  {
+    "name": "fourchette",
+    "alias": "fork",
+    "title": "Jeu de la fourchette",
+    "cssFile": null,
+    "jsFile": "fourchette.js"
+  },
+  {
+    "name": "diceroller",
+    "alias": "dice",
+    "title": "Dice Roller",
+    "cssFile": "diceRoller.css",
+    "jsFile": "diceRoller.js"
+  },
+  {
+    "name": "rpg",
+    "title": "RPG",
+    "cssFile": "rpg.css",
+    "jsFile": "rpg.js"
+  },
+  {
+    "name": "search",
+    "title": "Recherche",
+    "cssFile": "search.css",
+    "jsFile": "search.js"
+  }
+]
